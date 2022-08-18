@@ -793,7 +793,6 @@ body {
 }
 
 .modal-label {
-  /* outline: 2px solid teal; */
   position: relative;
   color: var(--title-color);
 }
