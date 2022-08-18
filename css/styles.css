@@ -511,7 +511,7 @@ body {
   fill: var(--social-icon-hover-color);
 }
 
-/* Постоянные клиенты */
+/* *Постоянные клиенты */
 
 .client-list {
   display: flex;
