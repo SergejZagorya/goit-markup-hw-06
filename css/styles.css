@@ -765,8 +765,8 @@ body {
 
 .modal-button {
   position: absolute;
-  top: -10px;
-  right: -10px;
+  top: 8px;
+  right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -777,12 +777,12 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--secondary-background-color);
-  transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function), border 250ms var(--timing-function);
 }
 
 .modal-button:hover {
   fill: var(--accent-color);
-  border-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
   background-color: var(--primary-background-color);
 }
 
