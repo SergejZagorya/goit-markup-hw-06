@@ -894,20 +894,24 @@ body {
 
 .checkbox-icon {
   margin-right: 5px;
-  border: 1.7px solid var(--title-color);
-  border-radius: 2px;
+  border: 2px solid var(--title-color);
+  border-radius: 4px;
   width: 18px;
   height: 18px;
   fill: #ffffff;
-  transition: background-color 250ms var(--timing-function), border 300ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function), border-color 300ms var(--timing-function);
 }
 
 .checkbox-label:hover .checkbox-icon {
-  border: 2px solid var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.checkbox:focus + .checkbox-icon {
+  border-color: var(--accent-color);
 }
 
 .checkbox:checked + .checkbox-icon {
-  border: 3px solid var(--accent-color);
+  border-color: var(--accent-color);
   background-color: var(--accent-color);
 }
 
@@ -975,15 +979,20 @@ body {
   min-height: 50px;
   margin-right: 12px;
   padding-left: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
   background-color: transparent;
   font-weight: var(--main-weight);
   font-size: var(--note-size);
   line-height: 1.25px;
   letter-spacing: 0.03em;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
+  transition: border 250ms var(--timing-function);
+}
+
+.footer-input:hover {
+  border: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 .footer-input::placeholder {
