@@ -400,12 +400,13 @@
           </ul>
         </div>
 
-        <!-- *Форма в footer  -->
-
-        <form name="signup_form" autocomplete="on" novalidate class="form-footer">
-          <label for="email" class="form-label">Подпишитесь на рассылку </label>
-          <div class="input-inner">
-            <input type="email" name="email" id="email" class="footer-input" placeholder="E-mail" />
+        <!-- **Форма в footer  -->
+        <div class="form-inner">
+          <strong class="form-slogan">Подпишитесь на рассылку </strong>
+          <form name="signup_form" autocomplete="on" novalidate class="form-footer">
+            <label class="footer-label">
+              <input type="email" name="email" id="email" class="footer-input" placeholder="E-mail" />
+            </label>
 
             <button type="submit" class="button form-button">
               Подписаться
@@ -413,8 +414,8 @@
                 <use href="./images/sprite.svg#send"></use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -426,7 +427,7 @@
             <use href="./images/sprite.svg#close"></use>
           </svg>
         </button>
-        <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+        <strong class="form-title">Оставьте свои данные, мы вам перезвоним</strong>
         <form class="modal-form">
           <label class="modal-label">
             <span class="label-name">Имя</span>
@@ -454,7 +455,7 @@
 
           <label class="modal-label">
             <span class="label-name">Комментарий</span>
-            <textarea name="user-feedback" rows="5" placeholder="Введите текст" class="modal-inpu feedback"></textarea>
+            <textarea name="user-feedback" rows="5" placeholder="Введите текст" class="feedback"></textarea>
           </label>
 
           <label class="checkbox-label">
@@ -463,7 +464,7 @@
               <use href="./images/sprite.svg#check"></use>
             </svg>
             <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю</span>
-            <a href="#" class="checkbox-link">Условия договора</a>
+            <a href="#" class="checkbox-link link">Условия договора</a>
           </label>
 
           <button type="submit" class="submit-btn button">Отправить</button>
