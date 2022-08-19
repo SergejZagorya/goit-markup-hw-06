@@ -795,7 +795,7 @@ body {
 .modal-button:focus {
   fill: var(--accent-color);
   border: 2px solid var(--accent-color);
-  outline: 2px solid var();
+  outline: 2px solid var(--accent-color);
   background-color: var(--primary-background-color);
 }
 
